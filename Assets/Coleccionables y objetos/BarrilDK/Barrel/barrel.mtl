@@ -1,0 +1,54 @@
+newmtl JOBJ_3_DOBJ_0_MOBJ_0
+	Ns 50
+	d 1
+	illum 2
+	Kd 1.0 1.0 1.0
+	Ks 0.2 0.2 0.2
+	Ka 0.2 0.2 0.2
+	map_Kd TOBJ_0.png
+
+newmtl JOBJ_4_DOBJ_0_MOBJ_0
+	Ns 50
+	d 1
+	illum 2
+	Kd 1.0 1.0 1.0
+	Ks 0.2 0.2 0.2
+	Ka 0.2 0.2 0.2
+	map_Kd TOBJ_0.png
+
+newmtl JOBJ_5_DOBJ_0_MOBJ_0
+	Ns 50
+	d 1
+	illum 2
+	Kd 1.0 1.0 1.0
+	Ks 0.2 0.2 0.2
+	Ka 0.2 0.2 0.2
+	map_Kd TOBJ_0.png
+
+newmtl JOBJ_6_DOBJ_0_MOBJ_0
+	Ns 50
+	d 1
+	illum 2
+	Kd 1.0 1.0 1.0
+	Ks 0.2 0.2 0.2
+	Ka 0.2 0.2 0.2
+	map_Kd TOBJ_0.png
+
+newmtl JOBJ_7_DOBJ_0_MOBJ_0
+	Ns 50
+	d 1
+	illum 2
+	Kd 1.0 1.0 1.0
+	Ks 0.2 0.2 0.2
+	Ka 0.2 0.2 0.2
+	map_Kd TOBJ_0.png
+
+newmtl JOBJ_8_DOBJ_0_MOBJ_0
+	Ns 50
+	d 1
+	illum 2
+	Kd 1.0 1.0 1.0
+	Ks 0.2 0.2 0.2
+	Ka 0.2 0.2 0.2
+	map_Kd TOBJ_0.png
+

@@ -1,0 +1,84 @@
+glass_mat
+=========
+  Textures:
+    - gamewatch_glass01_i4
+    - gamewatch_renz_yogore01_i4
+        Offset: -0.029999999329447746, 0.5
+        Scale: 1.0499999523162842, 2.200000047683716
+    - multi_kankyou02_s3tc
+        Scale: 1.5, 1.5
+
+  Ambient Colors:
+    - 50, 50, 50, 0
+
+  Color Registers:
+    - 60, 36, 24, 101
+
+  Steps:
+    1: RGB = ((60, 36, 24) * (tex #1 RGB))
+         A = 0, then add (tex #1 A)
+    2: RGB = (lerp from (prev. RGB) to (101, 101, 101) using (tex #2 RGB))
+         A = ((tex #2 A) * 101), then add (prev. A)
+    3: RGB = ((vertex RGB) * (prev. RGB)), multiply by 2
+         A = ((vertex A) * (prev. A))
+    4: RGB = ((tex #3 RGB) * (prev. RGB))
+         A = 0, then add (prev. A)
+
+
+
+hontai_mat
+==========
+  Textures:
+    - gamewatch_hontai01_s3tc
+    - multi_kankyou02_s3tc
+    - gamewatch_hontai_spq_mask01_i4
+
+  Ambient Colors:
+    - 50, 50, 50, 0
+
+  Color Registers:
+    - 255, 255, 255, 60
+
+  Steps:
+    1: RGB = ((tex #2 RGB) * (60, 60, 60))
+         A = 0
+    2: RGB = ((tex #3 A) * (prev. RGB))
+         A = 0
+    3: RGB = (tex #1 RGB), then add (prev. RGB)
+         A = 0
+    4: RGB = ((vertex RGB) * (prev. RGB)), multiply by 2
+         A = 0
+
+
+
+logo_mat
+========
+  Textures:
+    - gamewatch_logo01_i4
+
+  Ambient Colors:
+    - 50, 50, 50, 0
+
+  Steps:
+    1: RGB = (lerp from (vertex RGB) to (0, 0, 0) using (tex #1 RGB)), multiply by 2
+         A = ((tex #1 A) * (vertex A))
+
+
+
+stenless_mat
+============
+  Textures:
+    - gamewatch_stenless01_i4
+    - multi_kankyou02_s3tc
+
+  Ambient Colors:
+    - 50, 50, 50, 0
+
+  Color Registers:
+    - 80, 80, 80, 255
+
+  Steps:
+    1: RGB = ((tex #1 RGB) * (vertex RGB)), multiply by 2
+         A = 0
+    2: RGB = -1 * (lerp from (vertex RGB) to (0, 0, 0) using (tex #2 RGB)), then add (prev. RGB)
+         A = 0
